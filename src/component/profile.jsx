@@ -24,14 +24,14 @@ export default function profile() {
                 <Image
                     src="/images/profile1.png"
                     alt="Profile Picture"
-                    width={125}
+                    width={140}
                     height={150}
                     className="rounded-full shadow-lg"
                 />
                 <div className=''>
                     <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>Web Developer</h2>
                     <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
-                        <span>Hi, I am {text}</span><Cursor cursorColor='#F7AB0A' />
+                        <span>Hi, I'm {text}</span><Cursor cursorColor='#F7AB0A'/>
                     </h1>
                 </div>
             </div>
