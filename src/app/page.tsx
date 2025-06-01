@@ -7,7 +7,8 @@ import Projects from "@/component/projects";
 import About from "@/component/about";
 import Experience from "@/component/experience";
 import Skills from "@/component/skils";
-import { Button } from "@heroui/react";
+import Contact from "@/component/contact";
+// import { Button } from "@heroui/react";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Projects />
       <Experience />
       <Skills />
+      <Contact/>
     </main>
   );
 }

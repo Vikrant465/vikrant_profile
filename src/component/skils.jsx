@@ -10,7 +10,7 @@ const skills = {
   "Python Frameworks": ["Selenium", "FastAPI"],
   "APIs": [ "Telegram API", "Discord Bot API"],
 };
-
+// @ts-ignore
 const categoryIcons = {
   Languages: <FaCode size={30} />,
   Databases: <FaDatabase size={30} />,
@@ -59,9 +59,10 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-            >
+              >
               {/* Category Icon */}
               <div className="text-accent mb-4">
+                {/* @ts-ignore */}
                 {categoryIcons[category] || <FaCode size={30} />}
               </div>
 

@@ -55,6 +55,7 @@ const experiences = [
   },
 ];
 
+// @ts-ignore
 const ExperienceItem = ({ exp, index }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -83,7 +84,7 @@ const ExperienceItem = ({ exp, index }) => {
           role="button"
           aria-expanded={isOpen}
           aria-label={`Toggle details for ${exp.title}`}
-          onPress={(e) => {
+          onKeyDown={(e) => {
             if (e.key === "Enter") setIsOpen(!isOpen);
           }}
         >
@@ -112,7 +113,9 @@ const ExperienceItem = ({ exp, index }) => {
             {exp.organization} | {exp.duration} | {exp.location}
           </span>
           <ul className={`mt-4 list-disc list-inside text-text ${isOpen ? "block" : "hidden"}`}>
-            {exp.responsibilities.map((item, idx) => (
+            {exp.responsibilities.map((
+// @ts-ignore
+            item, idx) => (
               <li key={idx} className="mb-2">
                 {item}
               </li>

@@ -23,6 +23,7 @@ export default function Nav() {
   }, []);
 
   // Handle theme toggle
+  // @ts-ignore
   const toggleTheme = (value) => {
     setIsDark(value);
     if (value) {
@@ -41,25 +42,30 @@ export default function Nav() {
         <p className="font-bold text-inherit">Icon</p>
       </NavbarBrand>
       <NavbarContent className=" flex gap-4" justify="center">
-        <NavbarItem isActive>
-          <Link color="foreground" href="#">
+        <NavbarItem >
+          <Link color="foreground" href="#About">
             About
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" color="foreground" aria-current="page">
+        <NavbarItem >
+          <Link href="#Project" color="foreground" aria-current="page">
             Projects
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Contact
+          <Link color="foreground" href="#experience">
+            Experience
           </Link>
         </NavbarItem>
       </NavbarContent>
+      <NavbarItem>
+        <Link color="foreground" href="#skills">
+          My Skills
+        </Link>
+      </NavbarItem>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+          <Link href="../component/contact">Contact</Link>
         </NavbarItem>
         <NavbarItem>
           {/* <Button as={Link} color="primary" href="#" variant="flat">
