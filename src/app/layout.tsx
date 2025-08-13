@@ -14,6 +14,12 @@ const geist = Geist({ subsets: ["latin"] });
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <title>Vikrant Singh </title>
+        <meta name="description" content="Portfolio of Vikrant Singh" />
+        <meta name="google-site-verification" content="QmH9ehF6M0VkPA9fZPYMbdGnQ4zY2aueVAFwHTlGn8g" />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className={geist.className}>
         <HeroUIProvider>{children}</HeroUIProvider>
       </body>
