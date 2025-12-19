@@ -10,6 +10,7 @@ const skills = {
   "Python Frameworks": ["Selenium", "FastAPI"],
   "APIs": [ "Telegram API", "Discord Bot API"],
 };
+
 // @ts-ignore
 const categoryIcons = {
   Languages: <FaCode size={30} />,
@@ -54,7 +55,7 @@ const Skills = () => {
           {Object.entries(skills).map(([category, items], index) => (
             <motion.div
               key={index}
-              className="bg-background dark:bg-background-dark p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform duration-300 hover:scale-105"
+              className="bg-background dark:bg-background-dark  p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform duration-300 hover:scale-105"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}

@@ -20,12 +20,12 @@ export default function profile() {
     return (
         <div>
             <div className='h-screen w-full flex flex-col items-center justify-center text-center overflow-hidden'>
-                <BackgroundCirlcles />
+                {/* <BackgroundCirlcles /> */}
                 <Image
-                    src="/images/profile1.png"
+                    src="/images/profile2.jpeg"
                     alt="Profile Picture"
-                    width={140}
-                    height={150}
+                    width={280}
+                    height={350}
                     className="rounded-full shadow-lg"
                 />
                 <div className=''>

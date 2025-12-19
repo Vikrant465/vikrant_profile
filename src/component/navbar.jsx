@@ -39,7 +39,7 @@ export default function Nav() {
   return (
     <Navbar shouldHideOnScroll>
       <NavbarBrand>
-        <p className="font-bold text-inherit">Icon</p>
+        <p className="font-bold text-inherit">VIKRANT</p>
       </NavbarBrand>
       <NavbarContent className=" flex gap-4" justify="center">
         <NavbarItem >

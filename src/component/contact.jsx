@@ -58,22 +58,22 @@ const Contact = () => {
               viewport={{ once: true }}
             >
               {error && <p className="text-red-500 text-center">{error}</p>}
-              <div>
-                <label htmlFor="name" className="block text-gray-300">
+              <div className='text-text'>
+                <label htmlFor="name" className="block ">
                   Name
                 </label>
                 <input
                   {...register('name', { required: 'Name is required' })}
                   id="name"
                   type="text"
-                  className="w-full p-3 mt-1 bg-gray-700 text-white border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-accent transition-colors"
+                  className="w-full p-3 mt-1 bg-gray-700 border text-white border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-accent transition-colors"
                   placeholder="Your Name"
                 />
                 {/* @ts-ignore */}
                 {errors.name && <p className="text-red-500">{errors.name.message}</p>}
               </div>
               <div>
-                <label htmlFor="email" className="block text-gray-300">
+                <label htmlFor="email" className="block text-text">
                   Email
                 </label>
                 <input
@@ -93,7 +93,7 @@ const Contact = () => {
                 {errors.email && <p className="text-red-500">{errors.email.message}</p>}
               </div>
               <div>
-                <label htmlFor="subject" className="block text-gray-300">
+                <label htmlFor="subject" className="block text-text">
                   Subject
                 </label>
                 <input
@@ -113,7 +113,7 @@ const Contact = () => {
                 {errors.subject && <p className="text-red-500">{errors.subject.message}</p>}
               </div>
               <div>
-                <label htmlFor="message" className="block text-gray-300">
+                <label htmlFor="message" className="block text-text">
                   Message
                 </label>
                 <textarea
@@ -126,7 +126,7 @@ const Contact = () => {
                   })}
                   id="message"
                 // @ts-ignore
-                  className="w-full p-3 mt-1 bg-gray-700 text-white border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-accent transition-colors"
+                  className="w-full p-3 mt-1 bg-gray-700 text-white text-text border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-accent transition-colors"
                 //   rows="5"
                   placeholder="Your Message"
                 ></textarea>

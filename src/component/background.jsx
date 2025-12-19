@@ -13,12 +13,14 @@ function BackgroundCirlcles() {
         borderRadius: ["20%","20%","50%","80%","20%"]
       }}
     transition={{
-      duration: 5
+      duration: 10,
+      repeat: Infinity,
+      repeatType: "loop"
       }}
     className='relative flex justify-center items-center'>
-      <div className='absolute border border-[#333333] rounded-full h-[200px] w-[200px] mt-52 animate-ping' />
-      <div className='absolute border border-[#333333] rounded-full h-[300px] w-[300px] mt-52 animate-ping' />
-      <div className='absolute border border-[#333333] rounded-full h-[500px] w-[500px] mt-52 animate-ping' />
+      <div className='absolute border border-[#d31f1f] rounded-full h-[200px] w-[200px] mt-52 animate-ping' />
+      <div className='absolute border border-[#6d630d] rounded-full h-[300px] w-[300px] mt-52 animate-ping' />
+      <div className='absolute border border-[#148173] rounded-full h-[500px] w-[500px] mt-52 animate-ping' />
       <div className='absolute rounded-full border border-[#F4AB07] opacity-20 h-[650px] w-[650px] animate-ping mt-52'></div>
       <div className='absolute border border-[#333333] rounded-full h-[800px] w-[800px] mt-52 animate-ping' />
     </motion.div>

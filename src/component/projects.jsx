@@ -241,6 +241,7 @@ export default function Projects() {
                                                         width={650}
                                                         height={300}
                                                         className="rounded-lg shadow-lg cursor-pointer"
+                                                        onClick={() => alert("This project involves hardware components and cannot be demonstrated online.")}
                                                     />
                                                 </div>
                                             </div>
@@ -375,7 +376,7 @@ export default function Projects() {
                                                         • Technologies Used: Next.js, FireBase, Tailwind CSS
                                                     </p>
                                                     <p className="text-center text-gray-600">
-                                                        <a href="https://github.com/Vikrant465/taskdiary" className="text-sky-600 hover:underline">• View on GitHub</a>
+                                                        <a href="https://github.com/Vikrant465/" className="text-sky-600 hover:underline">• View on GitHub</a>
                                                     </p>
                                                     <p className="text-center text-sky-600">
                                                         <a href="https://taskdiarytut.netlify.app/" className="hover:underline">• Visit the project</a>
@@ -389,6 +390,55 @@ export default function Projects() {
                                                         height={300}
                                                         className="rounded-lg shadow-lg cursor-pointer"
                                                         onClick={() => window.open("https://taskdiarytut.netlify.app/")}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </CardBody>
+                                </Card>
+                            </Tab>
+                            <Tab
+                                key="project 6"
+                                title={
+                                    <div
+                                        onMouseEnter={() => setSelectedTab("project 6")}
+                                        className="cursor-pointer  text-xl"
+                                    >
+                                        Project 6
+                                    </div>
+                                }
+                            >
+                                <Card>
+                                    <CardBody>
+                                        <div>
+                                            <div className="flex items-center justify-center mb-5">
+                                                <h1 className="text-3xl font-bold text-center">
+                                                    News Webpage
+                                                </h1>
+                                            </div>
+                                            <div className="flex flex-row w-full h-full ">
+                                                <div className="flex flex-col items-center justify-center w-1/2 h-full gap-4">
+                                                    <p className="text-gray-600">
+                                                        This project is a News Webpage that provides users with the latest news articles from various categories. It features a clean and responsive design for an optimal reading experience.
+                                                    </p>
+                                                    <p className="text-center text-gray-600">
+                                                        • Technologies Used: Next.js, HeroUI, Tailwind CSS, AWS-S3, MongoDB
+                                                    </p>
+                                                    <p className="text-center text-gray-600">
+                                                        <a href="https://github.com/Vikrant465/News_nukkad" className="text-sky-600 hover:underline">• View on GitHub</a>
+                                                    </p>
+                                                    <p className="text-center text-sky-600">
+                                                        <a href="https://newscharchaofficial.com/" className="hover:underline">• Visit the project</a>
+                                                    </p>
+                                                </div>
+                                                <div className="flex items-center justify-center w-1/2 h-full p-6">
+                                                    <Image
+                                                        src="/images/project6.png"
+                                                        alt="Project 6 Screenshot"
+                                                        width={650}
+                                                        height={300}
+                                                        className="rounded-lg shadow-lg cursor-pointer"
+                                                        onClick={() => window.open("https://newscharchaofficial.com/")}
                                                     />
                                                 </div>
                                             </div>
