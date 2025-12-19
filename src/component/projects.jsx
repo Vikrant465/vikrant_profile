@@ -281,7 +281,7 @@ export default function Projects() {
                                                         <a href="https://github.com/Vikrant465/image-resizer-app" className="text-sky-600 hover:underline">• View on GitHub</a>
                                                     </p>
                                                     <p className="text-center text-sky-600">
-                                                        <a href="https://image-resizer-1cx1w52f4-vikrant465s-projects.vercel.app/" className="hover:underline">• Visit the project</a>
+                                                        <a href="https://verdant-capybara-9b39f3.netlify.app/" className="hover:underline">• Visit the project</a>
                                                     </p>
                                                 </div>
                                                 <div className="flex items-center justify-center w-1/2 h-full p-6">
@@ -291,7 +291,7 @@ export default function Projects() {
                                                         width={570}
                                                         height={300}
                                                         className="rounded-lg shadow-lg cursor-pointer"
-                                                        onClick={() => window.open("https://image-resizer-1cx1w52f4-vikrant465s-projects.vercel.app/")}
+                                                        onClick={() => window.open("https://verdant-capybara-9b39f3.netlify.app/")}
                                                     />
                                                 </div>
                                             </div>
