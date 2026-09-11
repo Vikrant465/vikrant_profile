@@ -1,26 +1,25 @@
-// app/page.tsx
-'use client';
-
-import Nav from "@/component/navbar";
-import Profile from "@/component/profile";
-import Projects from "@/component/projects";
-import About from "@/component/about";
-import Experience from "@/component/experience";
-import Skills from "@/component/skils";
-import Contact from "@/component/contact";
-// import { Button } from "@heroui/react";
+import { Navbar } from "@/component/layout/navbar";
+import { Footer } from "@/component/layout/footer";
+import { Hero } from "@/component/sections/hero";
+import { About } from "@/component/sections/about";
+import { Projects } from "@/component/sections/projects";
+import { Experience } from "@/component/sections/experience";
+import { Skills } from "@/component/sections/skills";
+import { Contact } from "@/component/sections/contact";
 
 export default function HomePage() {
   return (
-    <main>
-      <Nav />
-      {/* <Button color="success">hello</Button> */}
-      <Profile />
-      <About />
-      <Projects />
-      <Experience />
-      <Skills />
-      <Contact/>
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }

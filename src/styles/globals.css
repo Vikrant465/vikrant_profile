@@ -4,6 +4,36 @@
 @theme {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* Design tokens — mapped to CSS variables so light/dark both resolve
+     through the same utility classes (bg-background, text-foreground, etc). */
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+}
+
+:root {
+  --background: #ffffff;
+  --surface: #f5f6f8;
+  --foreground: #0f172a;
+  --muted: #5b6472;
+  --accent: #2563eb;
+  --accent-foreground: #ffffff;
+  --border: #e2e8f0;
+}
+
+.dark {
+  --background: #0a0e17;
+  --surface: #121826;
+  --foreground: #e7eaf0;
+  --muted: #97a1b3;
+  --accent: #5b9dfb;
+  --accent-foreground: #0a0e17;
+  --border: #232b3d;
 }
 
 @source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
@@ -11,4 +41,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
